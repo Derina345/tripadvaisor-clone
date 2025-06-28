@@ -181,12 +181,12 @@ body {
     
     position: relative;
     padding: 22px;
-
+    
 
 }
 
 .image1__img img {
-    width: 500px;
+    max-width: 500px;
     
     border: none;
     border-radius: 15px;
@@ -282,7 +282,7 @@ body {
 .card__desc{
     position: absolute;
     bottom: 40px;
-    color: white;
+    color: black;
     margin: 5px;
 }
 .explore{
@@ -339,13 +339,13 @@ body {
     
 }
 .bestchoice__title{
-    font-size: 80px;
+    font-size: 70px;
     margin-left: 130px;
 }
 .bestchoice__subtitle{
     margin-left: 130px;
     font-size: 25px;
-    margin-top: 20px;
+    margin-top: 30px;
     
 }
 .bestchoice__button {
@@ -399,4 +399,56 @@ body {
 .footer__one__s2 p:hover {
     transform: scale(1.08);
     
+}
+
+/*Media Queries*/
+
+@media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+    .image1{
+        display: none;
+    }
+    .bestchoice{
+        height: 300px;
+    }
+    .bestchoice__title{
+        font-size: 30px;
+        margin-left: 50px;
+    }
+    .bestchoice__subtitle{
+        margin-left: 50px;
+        font-size: 20px;
+    }
+    .bestchoice__button{
+        margin-left: 50px;
+    }
+    .card__desc{
+        
+    }
+    .footer__one{
+        margin-left: 10px;
+    }
+    .footer__two{
+        margin-left: 10px;
+    }
+    
+}
+@media screen and (max-width:500px){
+    .card{
+        flex-basis: 20%;
+    }
+    .navbar__s2,.navbar__s3{
+        display: none;
+    }
+    .where{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .image1{
+        display: none;
+    }
 }
